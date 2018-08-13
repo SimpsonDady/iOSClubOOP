@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA16BBDD2121ABEA00AFD4C7 /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16BBDC2121ABEA00AFD4C7 /* Truck.swift */; };
 		DAFF5D61212041F60001CD34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF5D60212041F60001CD34 /* AppDelegate.swift */; };
 		DAFF5D63212041F60001CD34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF5D62212041F60001CD34 /* ViewController.swift */; };
 		DAFF5D66212041F60001CD34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFF5D64212041F60001CD34 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA16BBDC2121ABEA00AFD4C7 /* Truck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
 		DAFF5D5D212041F60001CD34 /* iOSClubOOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSClubOOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFF5D60212041F60001CD34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAFF5D62212041F60001CD34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				DAFF5D75212085810001CD34 /* Car.swift */,
 				DAFF5D7C212089B40001CD34 /* Rv.swift */,
+				DA16BBDC2121ABEA00AFD4C7 /* Truck.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				DAFF5D76212085810001CD34 /* Car.swift in Sources */,
 				DAFF5D7D212089B40001CD34 /* Rv.swift in Sources */,
 				DAFF5D61212041F60001CD34 /* AppDelegate.swift in Sources */,
+				DA16BBDD2121ABEA00AFD4C7 /* Truck.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,22 +1,22 @@
 //
-//  Rv.swift
+//  Truck.swift
 //  iOSClubOOP
 //
-//  Created by 蔡昌銘 on 2018/8/12.
+//  Created by 蔡昌銘 on 2018/8/13.
 //  Copyright © 2018 蔡昌銘. All rights reserved.
 //
 
 import Foundation
 
-class Rv: Car{
+class Truck: Car{
     public override init(brand: String, plate: String){
         super.init(brand: brand, plate: plate)
-        type = "休旅車"
-        capacity = 50
-        consume = 10
+        type = "貨車"
+        capacity = 100
+        consume = 30
     }
     override func addPassenger(){
-        if passengers == 6{
+        if passengers == 3{
             print("There is no seat")
         }
         else{
@@ -25,11 +25,11 @@ class Rv: Car{
     }
     
     override func addGood() {
-        if goods == 3{
+        if goods == 10{
             print("The trunk is full")
         }
         else{
-            super.addGood()
+            goods? += 1
         }
     }
 }

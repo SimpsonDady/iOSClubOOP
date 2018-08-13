@@ -9,38 +9,88 @@
 import Foundation
 
 class Car{
-    private var brand: String?
-    private var plate: String?
-    private var consume: Double?
-    private var capacity: Double?
-    private var passengers: [String]?
-    private var goods: [String]?
+    internal var type: String?
+    private var brand: String?      //品牌
+    private var plate: String?      //車牌
+    internal var consume: Double?    //耗油量
+    internal var capacity: Double?   //油箱大小
+    private var stock: Double?      //油量
+    private var miles: Double?      //里程
+    internal var passengers: Int?
+    internal var goods: Int?
     
-    public init(brand: String, plate: String, consume: Double){
+    public init(brand: String, plate: String){
+        self.type = "汽車"
         self.brand = brand
         self.plate = plate
-        self.consume = consume
-        self.capacity = 100
-        self.passengers = []
-        self.goods = []
+        self.consume = 1
+        self.stock = 1
+        self.capacity = stock
+        self.miles = 0
+        self.passengers = 0
+        self.goods = 0
     }
     
+    
     public func drive(){
-        consume = 0
+        miles = miles! + (stock! * consume!)
+        stock = 0
     }
     public func refuel(){
-        consume = 100
+        stock = capacity
     }
-    public func addPassenger(passenger p: String){
-        passengers?.append(p)
+    public func addPassenger(){
+        passengers? += 1
     }
     public func removePassenger(){
-        _ = passengers?.popLast()
+        if passengers! > 0{
+            passengers? -= 1
+        }
     }
-    public func addGood(Good g: String){
-        goods?.append(g)
+    public func addGood(){
+        goods? += 1
     }
-    public func removegood(){
-        _ = goods?.popLast()
+    public func removeGood(){
+        if goods! > 0{
+            goods? -= 1
+        }
+    }
+    
+    public func setPlate(plate p: String) -> Bool{
+        if p.count == 6{
+            self.plate = p
+            return true
+        }
+        else{
+            return false
+        }
+    }
+    
+    public func getType() -> String?{
+        return type
+    }
+    public func getPlate() -> String?{
+        return plate
+    }
+    public func getBrand() -> String?{
+        return brand
+    }
+    public func getConsume() -> Double?{
+        return consume
+    }
+    public func getStock() -> Double?{
+        return stock
+    }
+    public func getCapacity() -> Double?{
+        return capacity
+    }
+    public func getPassengers() -> Int?{
+        return passengers
+    }
+    public func getGoods() -> Int?{
+        return goods
+    }
+    public func getMiles() -> Double?{
+        return miles
     }
 }
