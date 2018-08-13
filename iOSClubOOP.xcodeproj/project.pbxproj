@@ -13,6 +13,8 @@
 		DAFF5D69212041F60001CD34 /* iOSClubOOP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAFF5D67212041F60001CD34 /* iOSClubOOP.xcdatamodeld */; };
 		DAFF5D6B212041FF0001CD34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFF5D6A212041FF0001CD34 /* Assets.xcassets */; };
 		DAFF5D6E212041FF0001CD34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFF5D6C212041FF0001CD34 /* LaunchScreen.storyboard */; };
+		DAFF5D76212085810001CD34 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF5D75212085810001CD34 /* Car.swift */; };
+		DAFF5D7D212089B40001CD34 /* Rv.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF5D7C212089B40001CD34 /* Rv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DAFF5D6A212041FF0001CD34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAFF5D6D212041FF0001CD34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAFF5D6F212041FF0001CD34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFF5D75212085810001CD34 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		DAFF5D7C212089B40001CD34 /* Rv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		DAFF5D5F212041F60001CD34 /* iOSClubOOP */ = {
 			isa = PBXGroup;
 			children = (
+				DAFF5D77212088150001CD34 /* Models */,
 				DAFF5D60212041F60001CD34 /* AppDelegate.swift */,
 				DAFF5D62212041F60001CD34 /* ViewController.swift */,
 				DAFF5D64212041F60001CD34 /* Main.storyboard */,
@@ -65,6 +70,15 @@
 				DAFF5D67212041F60001CD34 /* iOSClubOOP.xcdatamodeld */,
 			);
 			path = iOSClubOOP;
+			sourceTree = "<group>";
+		};
+		DAFF5D77212088150001CD34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAFF5D75212085810001CD34 /* Car.swift */,
+				DAFF5D7C212089B40001CD34 /* Rv.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +154,8 @@
 			files = (
 				DAFF5D63212041F60001CD34 /* ViewController.swift in Sources */,
 				DAFF5D69212041F60001CD34 /* iOSClubOOP.xcdatamodeld in Sources */,
+				DAFF5D76212085810001CD34 /* Car.swift in Sources */,
+				DAFF5D7D212089B40001CD34 /* Rv.swift in Sources */,
 				DAFF5D61212041F60001CD34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
